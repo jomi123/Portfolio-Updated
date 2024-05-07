@@ -4,134 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Portfolio</title>
 
-    <style>
-        body {
-            background-color: rgb(219, 20, 20);
-            margin: 0;
 
-        }
-
-        .intro,
-        .education h2 {
-
-            color: #59bd99;
-        }
-
-        .intro h1 {
-            text-align: center;
-        }
-
-        .grid,
-        .education-grid {
-            display: grid;
-            grid-template-columns: 40% 40%;
-            column-gap: 20px;
-            align-items: center;
-        }
-
-        .profile-info h2 {
-            margin-top: 0;
-        }
-
-        .profile-info p {
-            color: white;
-            margin-top: 0;
-        }
-
-        .profile-pic {
-            width: 20rem;
-            height: 20rem;
-            overflow: hidden;
-            position: relative;
-            left: 20%;
-        }
-
-        .heading {
-            text-align: center;
-            color: white;
-        }
-
-        .heading p {
-            color: white;
-        }
-
-        .heading h2 {
-            color: #59bd99;
-        }
-
-        .skill {
-            display: inline-block;
-            margin-right: 20px;
-            vertical-align: top;
-        }
-
-        .skill img {
-            width: 70px;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        .skill p {
-            margin-top: 5px;
-            font-size: 14px;
-            color: #59bd99;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            justify-content: center;
-        }
-
-        .job-div {
-
-            width: 80%;
-            height: auto;
-            /* max-height: 2em; */
-            overflow: hidden;
-            position: relative;
-            left: 13%;
-            background-color: #5c746c;
-            border: #000000;
-            border-radius: 4px;
-            transition: height 0.3s ease;
-        }
-
-        .job-title {
-            color: #59bd99;
-            font-weight: bold;
-            margin: 0;
-            padding: 10px;
-
-        }
-
-        .job-description p {
-            /* display: none; */
-            line-height: 1.5;
-            text-align: left;
-            padding: 10px;
-            background-color: #5c746c;
-
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-
-        }
-
-
-        .job-div:hover .job-description {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
 </head>
 
 <body>
     <section class="intro">
-        <h1>Portfolio</h1> <br> <br> <br> <br>
+        <nav class="nav">
+            <div class="nav-elements">
+                <a class="a" href="/Portfolio/index.html" id="home">Home</a>
+                <a class="a" href="#skill-details" id="skill">Skills</a>
+                <a class="a" href="#work-experience" id="work"> Work Experience</a>
+                <a class="a" href="#project-details" id="project"> Projects</a>
+                <a class="a" href="#contact-details" id="contact">Contact</a>
+            </div>
+        </nav>
         <div class="grid">
             <img src="./images/IMG-20240417-WA0038.jpg" alt="" class="profile-pic">
             <div class="profile-info">
@@ -146,7 +35,7 @@
 
         </div> <br> <br> <br>
 
-        <div class="heading">
+        <!-- <div class="heading">
             <h2>EDUCATION</h2>
 
             <hr>
@@ -162,9 +51,9 @@
                     XII HSE Board | Percentile: 98.1%</p>
 
             </div>
-        </div>
+        </div> -->
 
-        <div class="heading">
+        <div class="heading" id="skill-details">
             <h2>SKILLS</h2>
             <hr>
 
@@ -234,7 +123,7 @@
         </div>
 
 
-        <div class="heading">
+        <div class="heading" id="work-experience">
             <h2>WORK EXPERIENCE</h2>
             <hr>
 
@@ -257,8 +146,177 @@
                         environment.</p>
                 </div>
             </div>
+
+            <div class="job-div">
+                <div class="job-title">CONTENT WRITER INTERN | Gtech Mulearn</div>
+                <div class="job-description">
+                    <p>
+                        Designed 3+ community event posters using Figma attracting over 80+ participation.
+
+                    </p>
+                    <p>
+                        Volunteered for YIP idea submission event influencing 100+ participants to submit ideas for the
+                        same.
+                    </p>
+                    <p>
+                        Wrote content for 3 posters & 2 meems, implemented 2 carousels, and a blog using notion.
+                    </p>
+
+                    <p>
+                        Collaborated and worked with 2 teams using notion.
+
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
         </div>
 
+
+        <div class="heading" id=project-details>
+            <h2>PROJECTS</h2>
+            <hr>
+
+            <div class="project-container">
+                <div class="project">
+                    <div class="project-header">
+                        <h3>Schello (React, NodeJS, Firebase)</h3>
+                        <span class="date">Sept 2022 - March 2024</span>
+                    </div>
+                    <p>An application to prevent drug abuse among children and crime analysis platform for analyzing
+                        drug incident reports.</p>
+                    <p>Launched a student experience-sharing platform, focused on substance abuse incidents and
+                        real-time anti-drug campaign updates.</p>
+                    <p>Attracted 300+ students and got recognized and supported by the Excise Department Of Kerala.</p>
+                    <p>Currently in testing phase with the support of Excise Department of Kerala.</p>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project">
+                    <div class="project-header">
+                        <h3>Wellness Bot (React, NodeJS)</h3>
+                        <span class="date">Sept 2022 - March 2024</span>
+                    </div>
+
+                    <p>
+                        An AI chat bot build on top of ChatGPT model to provide instant counselling for students.
+                    </p>
+                    <p>
+                        Developed and deployed an AI-driven substance abuse counselling bot, delivering anonymous
+                        personalized guidance to 300+ students struggling with mental health challenges.
+                    </p>
+
+                    <p>
+                        Significantly reduced wait times for initial counselling sessions, decreased privacy concerns
+                        and
+                        increased accessibility to support services.
+                    </p>
+
+                    <p>
+                        Utilized GPT 3.5 Turbo model with prompt tuning to achieve human-like chat conversation.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project">
+                    <div class="project-header">
+                        <h3>Inventory Management App (HTML,CSS,php,SQL) </h3>
+                        <span class="date">Oct 2022 - Dec 2022</span>
+                    </div>
+
+                    <p>
+                        Online shopping platform for Buyers and Sellers, with multi-user support, like a mini Amazon.
+                    </p>
+                    <p>
+                        Features: Buyers enjoy the convenience of adding, removing, and placing orders from a
+                        comprehensive product listing provided by various sellers. Meanwhile, sellers can add, edit, or
+                        remove products and effortlessly monitor their inventory orders.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="project-container">
+                <div class="project">
+                    <div class="project-header">
+                        <h3>Voice Bot (Python)</h3>
+                        <span class="date">June 2022 - July 2022</span>
+                    </div>
+
+                    <p>
+                        Engineered a Python-powered voice assistant bot resembling basic Google Assistant, effectively
+                        addressing user inquiries, resulting in improved user satisfaction and interaction rates.
+                    </p>
+                    <p>
+                        Features: capacity to introduce itself, provide user manuals, retrieve extensive global
+                        information, perform fundamental mathematical calculations, and play YouTube videos.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="project-container">
+                <div class="project">
+                    <div class="project-header">
+                        <h3>Attendo Admin Panel (React)</h3>
+                        <span class="date">May 2022 - Aug 2022</span>
+                    </div>
+
+                    <p>
+                        An admin panel for an attendance management app.
+                    </p>
+                    <p>
+                        Features: classroom and subject scheme management, user authorization, and the ability to
+                        generate attendance reports.
+                    </p>
+                    <p>Implemented in 1+ educational institutions taking attendance of 300+ students.</p>
+                    <p>Generated customer requirements attracted 20+ faculty members and documented the project to
+                        outline the scope and functionality of the admin panel.</p>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project">
+                    <div class="project-header">
+                        <h3>Pharmeasy(Flutter,Firebase) </h3>
+                        <span class="date">Jan 2022 - March 2022</span>
+                    </div>
+
+                    <p>
+                        A Flutter application to efficiently manage pharmaceutical stock within pharmacies.
+                    </p>
+                    <p>
+                        Designed UI and collaborated with the team by implementing the screens using Figma and Flutter.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="heading" id="volunteer">
+            <h2>VOLUNTEERING</h2>
+            <hr>
+
+            <div class="grid">
+                <img src="./images/nss.jpg" alt="" class="nss-pic">
+                <div class="nss-info">
+                    <p>Managed blood donation camps and cleaning campaigns. Organized welfare camps for old age homes.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <footer id="contact-details">
+            <h3>Contact Me</h3>
+            <a href="https://github.com/jomi123"><img src="./images/github-icon.svg" alt="" /></a>
+            <a href="https://www.linkedin.com/in/jomi-susan-mathew/"><img src="./images/linkedin.svg" alt="" /></a>
+        </footer>
     </section>
 </body>
 
