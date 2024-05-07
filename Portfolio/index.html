@@ -13,7 +13,8 @@
 
         }
 
-        .intro {
+        .intro,
+        .education h2 {
 
             color: #59bd99;
         }
@@ -35,28 +36,91 @@
         }
 
         .profile-info p {
-            display: relative;
-            top: 50%;
             color: white;
             margin-top: 0;
         }
 
         .profile-pic {
-            width: 15rem;
-            height: 15rem;
-            border-radius: 50%;
+            width: 20rem;
+            height: 20rem;
             overflow: hidden;
             position: relative;
             left: 20%;
         }
 
-        .education {
+        .heading {
             text-align: center;
-        }
-
-        .education p {
             color: white;
         }
+
+        .heading p {
+            color: white;
+        }
+
+        .heading h2 {
+            color: #59bd99;
+        }
+
+        .skill {
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+
+        .skill img {
+            width: 70px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .skill p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #59bd99;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .job-div {
+
+            width: 80%;
+            height: auto;
+            max-height: 2em;
+            overflow: hidden;
+            position: relative;
+            left: 13%;
+            background-color: #5c746c;
+            border: #000000;
+            border-radius: 4px;
+            transition: max-height 0.3s ease;
+        }
+
+        .job-title {
+            color: #59bd99;
+            font-weight: bold;
+            margin: 0;
+            padding: 10px;
+
+        }
+
+        .job-description p {
+            /* display: none; */
+            line-height: 1.5;
+            text-align: left;
+            padding: 10px;
+
+        }
+
+        /* 
+        .job-div:hover .job-description {
+            display: block;
+            max-height: 67vh;
+        } */
     </style>
 </head>
 
@@ -77,7 +141,7 @@
 
         </div> <br> <br> <br>
 
-        <div class="education">
+        <div class="heading">
             <h2>EDUCATION</h2>
 
             <hr>
@@ -88,15 +152,107 @@
                 <p>APJ Abdul Kalam Technological University, India Jul 2019 - July 2023
                     Bachelor of Technology with Honours (Computer Science) | CGPA: 9.33</p>
 
-                <p>July 2019-July 2013</p>
-                <p>APJ Abdul Kalam Technological University, India Jul 2019 - July 2023
-                    Bachelor of Technology with Honours (Computer Science) | CGPA: 9.33</p>
+                <p>June 2018 - May 2019</p>
+                <p>St Johns Higher Secondary School, Nalanchira June 2018 - May 2019
+                    XII HSE Board | Percentile: 98.1%</p>
 
             </div>
         </div>
 
+        <div class="heading">
+            <h2>SKILLS</h2>
+            <hr>
+
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="./images/react.png" alt="">
+                    <p>React</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/python.jpg" alt="">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/c.png" alt="">
+                    <p>C</p>
+                </div>
+
+                <div class="skill">
+                    <img src="./images/mysql.png" alt="">
+                    <p>MySql</p>
+                </div>
+
+                <div class="skill">
+                    <img src="./images/content writing.jpg" alt="">
+                    <p>Content Writing</p>
+                </div>
+
+                <div class="skill">
+                    <img src="./images/html.jpg" alt="">
+                    <p>HTML</p>
+                </div>
+
+                <div class="skill">
+                    <img src="./images/css.jpg" alt="">
+                    <p>CSS</p>
+                </div>
+
+                <div class="skill">
+                    <img src="./images/deno.png" alt="">
+                    <p>Deno</p>
+                </div>
+
+                <div class="skill">
+                    <img src="./images/figma.png" alt="">
+                    <p>Figma</p>
+                </div>
+
+                <div class="skill">
+                    <img src="./images/images.png" alt="">
+                    <p>Typescript</p>
+                </div>
 
 
+                <div class="skill">
+                    <img src="./images/nodejs.jpg" alt="">
+                    <p>NodeJS</p>
+                </div>
+
+                <div class="skill">
+                    <img src="./images/php.png" alt="">
+                    <p>PHP</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="heading">
+            <h2>WORK EXPERIENCE</h2>
+            <hr>
+
+            <div class="job-div">
+                <div class="job-title">SOFTWARE ENGINEER INTERN | Hopnmove Private Limited</div>
+                <div class="job-description">
+                    <p>Responsible for the development & optimization of API endpoints using Deno (NodeJS) with
+                        Xano, Supabase [Postgress] databases.</p>
+                    <p>Reduced the API response time by 60% through query optimization.</p>
+                    <p>Implemented caching strategies using Deno KV, further optimizing response times to
+                        milliseconds, improving page loading times by 90%.</p>
+                    <p>Developed Deno unit tests improving the reliability of API response.</p>
+                    <p>Used Deno and Vercel for seamless deployment and continuous integration, optimizing the
+                        development workflow.</p>
+                    <p>Developed a comprehensive design system using Figma.</p>
+                    <p>Provided voiceovers for design walkthroughs, effectively communicating design concepts and
+                        decisions to cross-functional teams and stakeholders.</p>
+                    <p>Gained proficiency in technologies, including LocoFy and Docker, Xano functions and actively
+                        contributed to the exploration and integration of these tools within the development
+                        environment.</p>
+                </div>
+            </div>
+        </div>
 
     </section>
 </body>
