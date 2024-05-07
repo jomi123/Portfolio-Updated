@@ -1,0 +1,200 @@
+body {
+    background-color: black;
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.intro,
+.education h2 {
+
+    color: #59bd99;
+}
+
+.intro h1 {
+    text-align: center;
+}
+
+.grid,
+.education-grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.profile-info h2 {
+    margin-top: 0;
+}
+
+.profile-info p {
+    color: white;
+    margin-top: 0;
+}
+
+.profile-pic,
+.nss-pic {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    position: relative;
+    left: 20%;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+}
+
+.heading p {
+    color: white;
+}
+
+.heading h2 {
+    color: #59bd99;
+}
+
+.skill {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.skill img {
+    width: 70px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.skill p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #59bd99;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.job-div {
+
+    width: 80%;
+    height: auto;
+    /* max-height: 4em; */
+    /* overflow: hidden; */
+    position: relative;
+    left: 13%;
+    background-color: #5c746c;
+    border: #000000;
+    border-radius: 4px;
+    /* transition: height 0.3s ease; */
+}
+
+.job-title {
+    color: #59bd99;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+
+}
+
+
+
+.job-description p {
+    /* display: none; */
+    line-height: 1.5;
+    text-align: left;
+    padding: 10px;
+    background-color: #5c746c;
+
+    /* max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease; */
+
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-container p {
+    text-align: left;
+}
+
+.project {
+    width: 40rem;
+    margin: 10px;
+    padding: 20px;
+    background-color: #5c746c;
+    border-radius: 8px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-header h3 {
+    color: #59bd99;
+    margin: 0;
+}
+
+.date {
+    color: #59bd99;
+}
+
+.nss-info p {
+    font-size: larger;
+}
+
+#contact-details {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding: 1rem;
+    margin-top: 4rem;
+    background-color: #5c746c;
+    color: white;
+}
+
+.a {
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #5c746c;
+    color: white;
+    border: 2px solid white;
+    margin: 0.5rem;
+}
+
+.nav {
+    color: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #5c746c;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-elements {
+    text-align: right;
+}
+
+
+/* 
+.job-title:hover+.job-description {
+    visibility: visible;
+    max-height: 70vh;
+    /* opacity: 1; */
+/* } */
