@@ -90,14 +90,14 @@
 
             width: 80%;
             height: auto;
-            max-height: 2em;
+            /* max-height: 2em; */
             overflow: hidden;
             position: relative;
             left: 13%;
             background-color: #5c746c;
             border: #000000;
             border-radius: 4px;
-            transition: max-height 0.3s ease;
+            transition: height 0.3s ease;
         }
 
         .job-title {
@@ -113,14 +113,19 @@
             line-height: 1.5;
             text-align: left;
             padding: 10px;
+            background-color: #5c746c;
+
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease;
 
         }
 
-        /* 
+
         .job-div:hover .job-description {
-            display: block;
-            max-height: 67vh;
-        } */
+            visibility: visible;
+            opacity: 1;
+        }
     </style>
 </head>
 
