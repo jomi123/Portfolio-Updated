@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #FFFFE0;
     margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -32,26 +32,38 @@ html {
 }
 
 .profile-info p {
-    color: white;
+    color: black;
     margin-top: 0;
 }
 
-.profile-pic,
-.nss-pic {
-    width: 20rem;
-    height: 20rem;
+.profile-pic {
+    /* width: 20rem; */
+    height: 15rem;
     overflow: hidden;
     position: relative;
     left: 20%;
 }
 
+.nss-pic {
+    height: 10rem;
+    overflow: hidden;
+    position: relative;
+    left: 10%;
+}
+
+#skill-details,
+#project-details {
+    background-color: #FBF1B9;
+}
+
+
 .heading {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .heading p {
-    color: white;
+    color: black;
 }
 
 .heading h2 {
@@ -65,6 +77,8 @@ html {
 
 }
 
+
+
 .skill img {
     width: 70px;
     height: auto;
@@ -75,7 +89,7 @@ html {
 .skill p {
     margin-top: 5px;
     font-size: 14px;
-    color: #59bd99;
+    color: #814710;
 }
 
 .skills-grid {
@@ -93,14 +107,14 @@ html {
     /* overflow: hidden; */
     position: relative;
     left: 13%;
-    background-color: #5c746c;
-    border: #000000;
+    background-color: #FFDFB4;
+    border:#865f2c ;
     border-radius: 4px;
     /* transition: height 0.3s ease; */
 }
 
 .job-title {
-    color: #59bd99;
+    color: #a17434;
     font-weight: bold;
     margin: 0;
     padding: 10px;
@@ -114,7 +128,7 @@ html {
     line-height: 1.5;
     text-align: left;
     padding: 10px;
-    background-color: #5c746c;
+    background-color:#FFDFB4;
 }
 
 .project-container {
@@ -131,7 +145,7 @@ html {
     width: 40rem;
     margin: 10px;
     padding: 20px;
-    background-color: #5c746c;
+    background-color: #FFDFB4;
     border-radius: 8px;
 }
 
@@ -143,12 +157,12 @@ html {
 }
 
 .project-header h3 {
-    color: #59bd99;
+    color: #a17434;
     margin: 0;
 }
 
 .date {
-    color: #59bd99;
+    color: #a17434;
 }
 
 .nss-info p {
@@ -161,15 +175,15 @@ html {
     font-weight: bold;
     padding: 1rem;
     margin-top: 4rem;
-    background-color: #5c746c;
-    color: white;
+    background-color: #FEE2C7;
+    color: #c2a182;
 }
 
 .a {
     text-decoration: none;
     padding: 0.5rem;
     border-radius: 5px;
-    background-color: #5c746c;
+    background-color: #c2a182;
     color: white;
     border: 2px solid white;
     margin: 0.5rem;
@@ -179,7 +193,7 @@ html {
     color: white;
     margin-bottom: 2rem;
     padding: 2rem;
-    background-color: #5c746c;
+    background-color: #FEE2C7;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -194,7 +208,7 @@ html {
     0%,
     33.33% {
         content: "Jomi Susan Mathew";
-        color: red;
+        color: #48a4b0;
     }
 
     33.34%,
@@ -283,35 +297,10 @@ html {
     }
 }
 
-.project-scroll-wrapper:hover .project-scroll-container {
-    animation-play-state: paused;
-}
 
 .project-container:hover {
     transform: scale(1.1);
-    /* Adjust the scale factor as needed */
     transition: transform 0.3s ease;
-    /* Add transition effect for smooth scaling */
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-    }
-
-    to {
-        transform: translateX(0);
-    }
+    animation-play-state: paused;
+    cursor: pointer;
 }
