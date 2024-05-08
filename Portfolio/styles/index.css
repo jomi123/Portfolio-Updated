@@ -279,7 +279,6 @@ html {
 
     100% {
         transform: translateX(calc(-100% - 20px));
-        /* Adjust the percentage to scroll */
     }
 }
 
@@ -289,6 +288,10 @@ html {
     transition: transform 0.3s ease;
     animation-play-state: paused;
     cursor: pointer;
+}
+
+.project-scroll-container:hover {
+    animation-play-state: paused;
 }
 
 .grid h2 {
