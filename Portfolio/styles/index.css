@@ -273,7 +273,7 @@ html {
 }
 
 @keyframes scrollAnimation {
-    0% {
+    3% {
         transform: translateX(0);
     }
 
